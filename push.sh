@@ -8,5 +8,6 @@ if [ -z "$msg" ]; then
   msg="update project"
 fi
 
-git commit -m "$msg"
-git push origin main
+git commit -m "$msg" || true
+git push origin1 main
+git push origin2 main
